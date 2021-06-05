@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObstacleController : MonoBehaviour
 {
     public GameObject[] obstacle;
-    private float time = 1.0f;
+    private float forInstantiateTime = 1.0f;
     private int number;
     
 
@@ -13,8 +13,8 @@ public class ObstacleController : MonoBehaviour
    
     void Start()
     {
-        time = 1.0f;
-        Destroy(gameObject, time);
+        forInstantiateTime = 1.0f;
+        //Destroy(gameObject, time);
     }
    
     /*
@@ -32,20 +32,20 @@ public class ObstacleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time -= Time.deltaTime;
-        if(time <= 0.0f)
-        {
-            time = 1.0f;
+        forInstantiateTime -= Time.deltaTime;
+        if(forInstantiateTime <= 0.0f)
+        { 
             number = Random.Range(0, obstacle.Length);
             Instantiate(obstacle[number], transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 
     
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider collider)
     {
-        if(other.gameObject.tag == "Obstacle")
+        if(collider.gameObject.tag == "Player")
         {
             
         }

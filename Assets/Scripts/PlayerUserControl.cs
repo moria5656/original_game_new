@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 public class PlayerUserControl : MonoBehaviour
 {
-    private CharacterController m_Character;
+    private PlayerMove m_Character;
     float h;
     float v;
 
@@ -11,7 +11,7 @@ public class PlayerUserControl : MonoBehaviour
     
     private void Awake()
     {
-        m_Character = GetComponent<CharacterController>();
+        m_Character = GetComponent<PlayerMove>();
     }
     
 
@@ -34,7 +34,7 @@ public class PlayerUserControl : MonoBehaviour
             v = CrossPlatformInputManager.GetAxis("Vertical");
         }
 
-        m_Character.Move(h, v, v, 0f);
+        m_Character.Move(h, v, 0f);
     }
     
     
