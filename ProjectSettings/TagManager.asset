@@ -8,6 +8,13 @@ TagManager:
   - Fire
   - Kusa
   - Enemy
+  - Kusa1
+  - Kusa2
+  - Kusa3
+  - Kusa4
+  - Kusa5
+  - Obstacle1
+  - Obstacle2
   layers:
   - Default
   - TransparentFX

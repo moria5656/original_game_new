@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3735381258488788887}
   - component: {fileID: 8587211460716505698}
+  - component: {fileID: -5126400694326588244}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -43,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d846a1d865edf4899978d4b91f42dbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle:
+  _parent: {fileID: 2376913886998371191}
+  _child:
   - {fileID: 3314045104236665765, guid: 109a750b2ed6f4014831e7153aee6cae, type: 3}
   - {fileID: 1130682412985110280, guid: 83a1c4ba93450487399f9069c5ba1f59, type: 3}
   - {fileID: 4411715929563890946, guid: b5dcaff8f94844f80b82b618953659a5, type: 3}
@@ -51,3 +53,16 @@ MonoBehaviour:
   - {fileID: 1981558036906313139, guid: eb9779ac549ab4c98abc6329e2d90405, type: 3}
   - {fileID: 4695934800698342340, guid: 0cafa07324e1542bea50e27d6315428f, type: 3}
   - {fileID: 5188462418247880787, guid: 0b3be7617e8e6494fba7334709d1d2a8, type: 3}
+--- !u!65 &-5126400694326588244
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2376913886998371191}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

@@ -7,10 +7,10 @@ public class UIManager : MonoBehaviour
 {
     public Text timerText;
     public Text scoreText;
-    public PlayerMove player;
+    public PlayerMove playerMove;
     public float timer;
     float gameTime = 20.0f;
-    public int score;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +31,8 @@ public class UIManager : MonoBehaviour
             timerText.text = "タイムアップ";
         }
 
-        scoreText.text = "スコア:" + score.ToString("f0");
+        //scoreText.text = "スコア:" + score.ToString("f0");
     }
+
+ 
 }

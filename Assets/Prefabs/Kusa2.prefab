@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 490101922726644194}
   m_Layer: 0
   m_Name: Kusa2
-  m_TagString: Kusa
+  m_TagString: Kusa2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4411715929563890946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.868146, y: 0.15918925, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,5 +94,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4562731, y: 1.3041825, z: 0.2}
-  m_Center: {x: -2.1546264, y: 0.8618504, z: 0}
+  m_Size: {x: 0.98271227, y: 1.3624634, z: 0}
+  m_Center: {x: -0.01254046, y: -0.29251713, z: -0.099999905}

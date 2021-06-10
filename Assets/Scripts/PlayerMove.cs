@@ -6,13 +6,10 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     Rigidbody playerBody;
-
     Vector3 inputDirection;
-
     float moveSpeed = 4.0f;
-
     Animator walkAnimator;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -82,21 +79,57 @@ public class PlayerMove : MonoBehaviour
     {
         playerBody.velocity = inputDirection * moveSpeed;
     }
+    
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider collider)
     {
-        if (other.gameObject.tag == "kusa")
+        if (collider.gameObject.tag == "Kusa1")
         {
-            /*
-            GameManager.gm.SendMessage("Upscore");
-            GameObject 
-            Destroy(this)
-            */
+            GameObject k1 = collider.gameObject;
+            
+            Destroy(k1, 0.01f);
         }
 
-        else if (other.gameObject.tag == "enemy")
+        else if (collider.gameObject.tag == "Kusa2")
         {
+            GameObject k2 = collider.gameObject;
+            
+            Destroy(k2, 0.01f);
+        }
 
+        else if (collider.gameObject.tag == "Kusa3")
+        {
+            GameObject k3 = collider.gameObject;
+            
+            Destroy(k3, 0.01f);
+        }
+
+        else if (collider.gameObject.tag == "Kusa4")
+        {
+            GameObject k4 = collider.gameObject;
+            
+            Destroy(k4, 0.01f);
+        }
+
+        else if (collider.gameObject.tag == "Kusa5")
+        {
+            GameObject k5 = collider.gameObject;
+            
+            Destroy(k5, 0.01f);
+        }
+
+        else if (collider.gameObject.tag == "Obstacle1")
+        {
+            GameObject o1 = collider.gameObject;
+            
+            Destroy(o1, 0.01f);
+        }
+
+        else if (collider.gameObject.tag == "Obstacle2")
+        {
+            GameObject o2 = collider.gameObject;
+            
+            Destroy(o2, 0.01f);
         }
     }
 }
