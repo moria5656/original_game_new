@@ -15,6 +15,9 @@ TagManager:
   - Kusa5
   - Obstacle1
   - Obstacle2
+  - PlayeR
+  - PlayerL
+  - PlayerR
   layers:
   - Default
   - TransparentFX

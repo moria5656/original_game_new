@@ -98,10 +98,10 @@ GameObject:
   - component: {fileID: 8902697566444948772}
   - component: {fileID: 8902697566444948773}
   - component: {fileID: 8902697566444948771}
-  - component: {fileID: 8902697566444948770}
+  - component: {fileID: 2138638880}
   m_Layer: 0
   m_Name: PlayerRight
-  m_TagString: Player
+  m_TagString: PlayerR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -200,7 +200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f04157ab1c74a2e9502ef123a42e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
 --- !u!95 &8902697566444948772
 Animator:
   serializedVersion: 3
@@ -246,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisPlayerID: 2
---- !u!114 &8902697566444948770
+--- !u!114 &2138638880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -255,8 +254,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8902697566444948778}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8ab798f2ee27462793ed920940963b5, type: 3}
+  m_Script: {fileID: 11500000, guid: f7459226bbf264e8b9f7e8d9c7b74e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMove: {fileID: 0}
-  playerScore: 100
+  scoreTextR: {fileID: 0}
+  scoreTextL: {fileID: 0}
+  playerR: {fileID: 8902697566444948778}
+  playerL: {fileID: 0}

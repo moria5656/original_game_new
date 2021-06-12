@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -132,4 +134,7 @@ public class PlayerMove : MonoBehaviour
             Destroy(o2, 0.01f);
         }
     }
+
+    
+    
 }
