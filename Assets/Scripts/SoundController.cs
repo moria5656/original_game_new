@@ -27,9 +27,21 @@ public class SoundController : MonoBehaviour
             audioSource.Play();
         }
 
-        if(Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            audioSource.clip = bgm02;
+            audioSource.Play();
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
         {
             audioSource.Stop();
         }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            audioSource.PlayOneShot(soundEffect);
+        }
+
+        
     }
 }

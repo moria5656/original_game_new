@@ -49,3 +49,11 @@ MonoBehaviour:
   scoreTextL: {fileID: 8967542188440334381, guid: 3fde477c299154718b92b43333eeb369, type: 3}
   playerR: {fileID: 8902697566444948778, guid: 82da85e299bac4733bdf6789d480143d, type: 3}
   playerL: {fileID: 6772871764691468977, guid: 78366af69690e4fd4aed1e0fed53376d, type: 3}
+  audioSource: {fileID: 0}
+  soundEffect01: {fileID: 8300000, guid: 1c1a48f70e27f410080f755938a8cf9d, type: 3}
+  soundEffect02: {fileID: 8300000, guid: 29996011ad6b24879a32e704947633e3, type: 3}
+  soundEffect03: {fileID: 8300000, guid: b877ad4d9ab0845efa64e1a2ce04ccd4, type: 3}
+  soundEffect04: {fileID: 8300000, guid: 11f1e2d1400e843c1bdbc45e0bbf4331, type: 3}
+  soundEffect05: {fileID: 8300000, guid: 026163f3d681f485f88c80033abd8011, type: 3}
+  soundEffect06: {fileID: 8300000, guid: 0a48ad2d1d9604b03a0bb4f1c25fec72, type: 3}
+  soundEffect07: {fileID: 8300000, guid: 05b445401fae54da4b426b9988f63b51, type: 3}

@@ -43,9 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afba4f08afe854f5ea35c759a3602108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 5876830355974964215, guid: 7dbee0d2a72564ad8b6311256c25c9b4, type: 3}
+  timerText: {fileID: 0}
   resultText: {fileID: 5610856099726320459, guid: 36d9795a324764bc68231bd159fb6390, type: 3}
   scoreScript: {fileID: 3923139538618223812, guid: caa0e8d5565d14af49ea95153fc04a9e, type: 3}
   timer: 0
-  gameController: {fileID: 56851627424203928, guid: cdfc0005bc5984e448abfa9546c83559, type: 3}
-  playerUserControl: {fileID: 0}
+  gameController: {fileID: 0}
+  playerR: {fileID: 0}
+  playerL: {fileID: 0}
+  audioSource: {fileID: 760111738839021887, guid: a52b714aaf0c9412ead16035e5cc811d, type: 3}
+  bgm01: {fileID: 8300000, guid: 565bdf823534d2244a91e618f748c2e0, type: 3}
+  bgm02: {fileID: 8300000, guid: aa6ecdecc6920834fae69b58134df785, type: 3}

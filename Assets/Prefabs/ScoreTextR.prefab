@@ -95,6 +95,6 @@ MonoBehaviour:
   scoreR: 0
   scoreL: 0
   scoreTextR: {fileID: 5780221138325453133}
-  scoreTextL: {fileID: 0}
-  playerR: {fileID: 0}
-  playerL: {fileID: 0}
+  scoreTextL: {fileID: 8967542188440334381, guid: 3fde477c299154718b92b43333eeb369, type: 3}
+  playerR: {fileID: 8902697566444948778, guid: 82da85e299bac4733bdf6789d480143d, type: 3}
+  playerL: {fileID: 6772871764691468977, guid: 78366af69690e4fd4aed1e0fed53376d, type: 3}

@@ -257,7 +257,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7459226bbf264e8b9f7e8d9c7b74e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreR: 0
+  scoreL: 0
   scoreTextR: {fileID: 0}
   scoreTextL: {fileID: 0}
   playerR: {fileID: 8902697566444948778}
   playerL: {fileID: 0}
+  audioSource: {fileID: 0}
+  soundEffect01: {fileID: 8300000, guid: 1c1a48f70e27f410080f755938a8cf9d, type: 3}
+  soundEffect02: {fileID: 8300000, guid: 29996011ad6b24879a32e704947633e3, type: 3}
+  soundEffect03: {fileID: 8300000, guid: b877ad4d9ab0845efa64e1a2ce04ccd4, type: 3}
+  soundEffect04: {fileID: 8300000, guid: 11f1e2d1400e843c1bdbc45e0bbf4331, type: 3}
+  soundEffect05: {fileID: 8300000, guid: 026163f3d681f485f88c80033abd8011, type: 3}
+  soundEffect06: {fileID: 8300000, guid: 0a48ad2d1d9604b03a0bb4f1c25fec72, type: 3}
+  soundEffect07: {fileID: 8300000, guid: 05b445401fae54da4b426b9988f63b51, type: 3}

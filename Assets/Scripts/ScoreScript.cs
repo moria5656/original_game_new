@@ -11,9 +11,17 @@ public class ScoreScript : MonoBehaviour
     public Text scoreTextL;
     public GameObject playerR;
     public GameObject playerL;
+
+    public AudioSource audioSource;
+    public AudioClip soundEffect01;
+    public AudioClip soundEffect02;
+    public AudioClip soundEffect03;
+    public AudioClip soundEffect04;
+    public AudioClip soundEffect05;
+    public AudioClip soundEffect06;
+    public AudioClip soundEffect07;
     
 
-    
 
     public void UpScore1()
     {
@@ -109,8 +117,8 @@ public class ScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(scoreR);
-        Debug.Log(scoreL);
+        Debug.Log("ScoreScript.R = " + scoreR);
+        Debug.Log("ScoreScript.L = " + scoreL);
         scoreTextR.text = "Score:" + scoreR.ToString(); //ScoreTextの文字をScore:Scoreの値にする
         scoreTextL.text = "Score:" + scoreL.ToString();
 
@@ -121,39 +129,40 @@ public class ScoreScript : MonoBehaviour
         if (collider.gameObject.tag == "Kusa1")
         {
             UpScore1();
-
+            audioSource.PlayOneShot(soundEffect01);
         }
 
         else if (collider.gameObject.tag == "Kusa2")
         {
 
             UpScore2();
-
+            audioSource.PlayOneShot(soundEffect02);
         }
         else if (collider.gameObject.tag == "Kusa3")
         {
             UpScore3();
-
+            audioSource.PlayOneShot(soundEffect03);
         }
 
         else if (collider.gameObject.tag == "Kusa4")
         {
 
             UpScore4();
-
+            audioSource.PlayOneShot(soundEffect04);
         }
 
         else if (collider.gameObject.tag == "Kusa5")
         {
 
             UpScore5();
-
+            audioSource.PlayOneShot(soundEffect05);
         }
 
         else if (collider.gameObject.tag == "Obstacle1")
         {
 
             DownScoreObstacle1();
+            audioSource.PlayOneShot(soundEffect06);
 
         }
 
@@ -161,6 +170,7 @@ public class ScoreScript : MonoBehaviour
         {
 
             DownScoreObstacle2();
+            audioSource.PlayOneShot(soundEffect07);
 
         }
     }   
