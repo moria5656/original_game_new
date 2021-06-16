@@ -16,6 +16,7 @@ MonoImporter:
   - soundEffect05: {fileID: 8300000, guid: 026163f3d681f485f88c80033abd8011, type: 3}
   - soundEffect06: {fileID: 8300000, guid: 0a48ad2d1d9604b03a0bb4f1c25fec72, type: 3}
   - soundEffect07: {fileID: 8300000, guid: 05b445401fae54da4b426b9988f63b51, type: 3}
+  - soundEffect08: {fileID: 8300000, guid: 64065a2778d4445bb8dfbd6b86cbada3, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

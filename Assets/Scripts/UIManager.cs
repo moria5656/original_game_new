@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
 {
     public Text timerText;
     public Text resultText;
+    public Text resultScoreText;
     public ScoreScript scoreScript;
     public float timer;
     float gameTime = 20.0f;
@@ -33,26 +34,31 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ScoreR = scoreScript.scoreR;
-        ScoreL = scoreScript.scoreL;
+        ScoreR = playerR.gameObject.GetComponent<ScoreScript>().scoreR;
+        ScoreL = playerL.gameObject.GetComponent<ScoreScript>().scoreL;
+        //ScoreR = scoreScript.scoreR;
+        //ScoreL = scoreScript.scoreL;
+        //変数を保存しているのはgameobjectである
         Debug.Log("ScoreR is " + ScoreR);
         Debug.Log("ScoreL is " + ScoreL);
         if (timer >= 0.0f)
         {
             timer -= Time.deltaTime;
-            timerText.text = "残り時間:" + timer.ToString("f1");
+            timerText.text = "TIME :" + timer.ToString("f1");
         }
         else
         {
-            timerText.text = "タイムアップ";
+            timerText.text = "TIMEUP";
             Invoke("sendMessage", 0.5f);
             if (ScoreR > ScoreL)
             {
-                resultText.text = "Winner is PlayerRight" + ScoreR.ToString("f1");
+                resultText.text = "Winner is PlayerRight";
+                resultScoreText.text = ScoreR.ToString("f0");
             }
             else if (ScoreL > ScoreR)
             {
-                resultText.text = "Winner is PlayerLeft" + ScoreL.ToString("f1");
+                resultText.text = "Winner is PlayerLeft";
+                resultScoreText.text = ScoreL.ToString("f0");
             }
             else if (ScoreR == ScoreL)
             {

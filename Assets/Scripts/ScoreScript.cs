@@ -20,7 +20,8 @@ public class ScoreScript : MonoBehaviour
     public AudioClip soundEffect05;
     public AudioClip soundEffect06;
     public AudioClip soundEffect07;
-    
+    public AudioClip soundEffect08;
+
 
 
     public void UpScore1()
@@ -87,11 +88,11 @@ public class ScoreScript : MonoBehaviour
     {
         if (this.gameObject.tag == "PlayerR")
         {
-            scoreR = scoreR - 500;
+            scoreR = scoreR - 200;
         }
         else if (this.gameObject.tag == "PlayerL")
         {
-            scoreL = scoreL - 500;
+            scoreL = scoreL - 200;
         };
     }
 
@@ -99,14 +100,25 @@ public class ScoreScript : MonoBehaviour
     {
         if (this.gameObject.tag == "PlayerR")
         {
-            scoreR = scoreR - 250;
+            scoreR = scoreR - 100;
         }
         else if (this.gameObject.tag == "PlayerL")
         {
-            scoreL = scoreL - 250;
+            scoreL = scoreL - 100;
         }
     }
 
+    public void DownScoreFlower()
+    {
+        if (this.gameObject.tag == "PlayerR")
+        {
+            scoreR = scoreR - 1000;
+        }
+        else if (this.gameObject.tag == "PlayerL")
+        {
+            scoreL = scoreL - 1000;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -119,8 +131,14 @@ public class ScoreScript : MonoBehaviour
     {
         Debug.Log("ScoreScript.R = " + scoreR);
         Debug.Log("ScoreScript.L = " + scoreL);
-        scoreTextR.text = "Score:" + scoreR.ToString(); //ScoreTextの文字をScore:Scoreの値にする
-        scoreTextL.text = "Score:" + scoreL.ToString();
+        if(this.gameObject.tag == "PlayerR")
+        {
+            scoreTextR.text = "Score:" + scoreR.ToString(); //ScoreTextの文字をScore:Scoreの値にする
+        }
+        else if(this.gameObject.tag == "PlayerL")
+        {
+            scoreTextL.text = "Score:" + scoreL.ToString();
+        }
 
 
     }
@@ -171,6 +189,14 @@ public class ScoreScript : MonoBehaviour
 
             DownScoreObstacle2();
             audioSource.PlayOneShot(soundEffect07);
+
+        }
+
+        else if (collider.gameObject.tag == "Flower")
+        {
+
+            DownScoreFlower();
+            audioSource.PlayOneShot(soundEffect08);
 
         }
     }   

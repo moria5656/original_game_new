@@ -133,6 +133,13 @@ public class PlayerMove : MonoBehaviour
             
             Destroy(o2, 0.01f);
         }
+
+        else if (collider.gameObject.tag == "Flower")
+        {
+            GameObject f = collider.gameObject;
+
+            Destroy(f, 0.01f);
+        }
     }
 
     

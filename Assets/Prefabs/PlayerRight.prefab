@@ -59,7 +59,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -69,7 +69,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 0
   m_HDR: 1
-  m_AllowMSAA: 0
+  m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 0
@@ -82,7 +82,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8902697566306171028}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!1 &8902697566444948778
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,8 +230,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.31468463, y: 0.7207966, z: 0.2}
+  m_Center: {x: 0.01269114, y: -0.038073063, z: 0}
 --- !u!114 &8902697566444948771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,3 +271,4 @@ MonoBehaviour:
   soundEffect05: {fileID: 8300000, guid: 026163f3d681f485f88c80033abd8011, type: 3}
   soundEffect06: {fileID: 8300000, guid: 0a48ad2d1d9604b03a0bb4f1c25fec72, type: 3}
   soundEffect07: {fileID: 8300000, guid: 05b445401fae54da4b426b9988f63b51, type: 3}
+  soundEffect08: {fileID: 8300000, guid: 64065a2778d4445bb8dfbd6b86cbada3, type: 3}

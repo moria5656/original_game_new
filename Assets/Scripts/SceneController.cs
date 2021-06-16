@@ -13,16 +13,18 @@ public class SceneController : MonoBehaviour
       
     }
 
+    public void StartGame()
+    {
+        if (SceneManager.GetActiveScene().name == "Title")
+        {
+            ToMain();
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(SceneManager.GetActiveScene().name == "Title")
-        {
-            if(Input.GetKeyDown(KeyCode.Space))
-            {
-                ToMain();
-            }
-        }
+       
     }
 
     public void ToMain()
