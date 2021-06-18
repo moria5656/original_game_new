@@ -11,7 +11,8 @@ public class PlayerMove : MonoBehaviour
     Vector3 inputDirection;
     float moveSpeed = 4.0f;
     Animator walkAnimator;
-    
+    public GameObject particleObject;
+
 
     // Start is called before the first frame update
     void Start()
@@ -88,35 +89,35 @@ public class PlayerMove : MonoBehaviour
         if (collider.gameObject.tag == "Kusa1")
         {
             GameObject k1 = collider.gameObject;
-            
+            Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
             Destroy(k1, 0.01f);
         }
 
         else if (collider.gameObject.tag == "Kusa2")
         {
             GameObject k2 = collider.gameObject;
-            
+            Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
             Destroy(k2, 0.01f);
         }
 
         else if (collider.gameObject.tag == "Kusa3")
         {
             GameObject k3 = collider.gameObject;
-            
+            Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
             Destroy(k3, 0.01f);
         }
 
         else if (collider.gameObject.tag == "Kusa4")
         {
             GameObject k4 = collider.gameObject;
-            
+            Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
             Destroy(k4, 0.01f);
         }
 
         else if (collider.gameObject.tag == "Kusa5")
         {
             GameObject k5 = collider.gameObject;
-            
+            Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
             Destroy(k5, 0.01f);
         }
 

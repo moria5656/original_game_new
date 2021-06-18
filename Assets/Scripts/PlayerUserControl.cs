@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.CrossPlatformInput;
 public class PlayerUserControl : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class PlayerUserControl : MonoBehaviour
     private void FixedUpdate()
     {
         
-        if(thisPlayerID == 1)
+        if(thisPlayerID == 1 )
         {
             h = CrossPlatformInputManager.GetAxis("Horizontal_P1");
             v = CrossPlatformInputManager.GetAxis("Vertical_P1");

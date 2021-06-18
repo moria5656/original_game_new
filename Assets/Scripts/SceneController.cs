@@ -37,5 +37,10 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Result");   
     }
 
-   
+    public void ToTitle()
+    {
+        SceneManager.LoadScene("Title" +
+            "");
+    }
+
 }

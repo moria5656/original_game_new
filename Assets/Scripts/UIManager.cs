@@ -9,17 +9,24 @@ public class UIManager : MonoBehaviour
     public Text timerText;
     public Text resultText;
     public Text resultScoreText;
+    //public Text countDownText;
+
+    //public static UIManager instance;
     public ScoreScript scoreScript;
     public float timer;
     float gameTime = 20.0f;
+   
+
+
     public GameObject gameController;
     public GameObject playerR;
     public GameObject playerL;
-
+    public GameObject panel;
     public AudioSource audioSource;
 
-    public AudioClip bgm01;
-    public AudioClip bgm02;
+    public bool isPlaying;
+
+    public AudioClip soundEffectClear;
 
     int ScoreR;
     int ScoreL;
@@ -27,8 +34,10 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        isPlaying = false;
         timer = gameTime;
+        //countDownText.text = "";
+        //StartCoroutine(CountDown());
     }
 
     // Update is called once per frame
@@ -36,8 +45,8 @@ public class UIManager : MonoBehaviour
     {
         ScoreR = playerR.gameObject.GetComponent<ScoreScript>().scoreR;
         ScoreL = playerL.gameObject.GetComponent<ScoreScript>().scoreL;
-        //ScoreR = scoreScript.scoreR;
-        //ScoreL = scoreScript.scoreL;
+        //ScoreR = scoreScript.scoreR;ばつ
+        //ScoreL = scoreScript.scoreL;ばつ
         //変数を保存しているのはgameobjectである
         Debug.Log("ScoreR is " + ScoreR);
         Debug.Log("ScoreL is " + ScoreL);
@@ -49,7 +58,10 @@ public class UIManager : MonoBehaviour
         else
         {
             timerText.text = "TIMEUP";
-            Invoke("sendMessage", 0.5f);
+            audioSource.PlayOneShot(soundEffectClear);
+            //isPlaying = false;
+            Invoke("startFadeOut", 0.5f);
+            Invoke("sendMessage", 1.8f);
             if (ScoreR > ScoreL)
             {
                 resultText.text = "Winner is PlayerRight";
@@ -101,6 +113,31 @@ public class UIManager : MonoBehaviour
         }
 
     }
+
+    void startFadeOut()
+    {
+        panel.SendMessage("StartFadeOut");
+    }
+
+    /*
+    IEnumerator CountDown()
+    {
+        countDownText.text = "3";
+        yield return new WaitForSeconds(1.0f);
+
+        countDownText.text = "2";
+        yield return new WaitForSeconds(1.0f);
+
+        countDownText.text = "1";
+        yield return new WaitForSeconds(1.0f);
+
+        countDownText.text = "START";
+        yield return new WaitForSeconds(1.0f);
+
+        countDownText.text = "";
+        isPlaying = true;
+    }
+    */
 }
 
 
