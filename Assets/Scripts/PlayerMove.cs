@@ -110,7 +110,7 @@ public class PlayerMove : MonoBehaviour
         else if (collider.gameObject.tag == "Kusa4")
         {
             GameObject k4 = collider.gameObject;
-            Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
+            //Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
             Destroy(k4, 0.01f);
         }
 

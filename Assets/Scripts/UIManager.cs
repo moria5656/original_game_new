@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour
     public Text resultScoreText;
     //public Text countDownText;
 
-    //public static UIManager instance;
+    public static UIManager instance;
     public ScoreScript scoreScript;
     public float timer;
     float gameTime = 20.0f;
